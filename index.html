@@ -25,6 +25,79 @@
         .dates-column {
             font-size: 0.85em;
         }
+        
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .intro img {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+                object-fit: contain !important;
+            }
+            
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            .brand-heading {
+                font-size: 2em !important;
+            }
+            
+            .intro-text {
+                font-size: 1.2em !important;
+            }
+            
+            .table {
+                font-size: 0.9em !important;
+            }
+            
+            .person-avatar {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .brand-heading {
+                font-size: 1.5em !important;
+            }
+            
+            .intro-text {
+                font-size: 1em !important;
+            }
+            
+            .table {
+                font-size: 0.8em !important;
+            }
+        }
+        
+        /* Remove unwanted spacing */
+        .intro {
+            margin: 0 !important;
+            padding-top: 70px !important;
+            padding-bottom: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            min-height: auto !important;
+        }
+        
+        .content-section {
+            padding-top: 60px !important;
+            margin-top: 0 !important;
+        }
+        
+        /* Ensure no gaps between sections */
+        header + section {
+            margin-top: 0 !important;
+        }
+        
+        /* Account for fixed navbar */
+        @media (max-width: 768px) {
+            .intro {
+                padding-top: 60px !important;
+            }
+        }
     </style>
 
 </head>
@@ -69,22 +142,11 @@
     <!-- /.container -->
 </nav>
     <!-- Intro Header -->
-<header class="intro" style="width: 100%; position: relative; overflow: hidden;">
-    <img src="./img/cover.jpg" style="width: 100%; height: auto; display: block;" alt="Cover Image">
-    <div class="intro-body" style="position: absolute; bottom: 50px; width: 100%; z-index: 10;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<header class="intro" style="width: 100%; position: relative; overflow: hidden; margin: 0; padding: 70px 0 0 0;">
+    <img src="./img/cover.jpg" style="width: 100%; height: auto; display: block; max-width: 100%; object-fit: cover; margin: 0; padding: 0;" alt="Cover Image">
 </header>
     <!-- About Section -->
-<section id="about" class="container content-section text-left">
+<section id="about" class="container content-section text-left" style="margin-top: 0; padding-top: 60px;">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <div class="text-center" style="margin-bottom: 40px;">
