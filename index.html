@@ -111,8 +111,25 @@
         .vision-address td:first-child { border-left-color: #9966ff; }
         .forum td:first-child { border-left-color: #66ff99; }
         .dialogue td:first-child { border-left-color: #ffcc66; }
-        .break td:first-child { border-left-color: #cccccc; }
+        .break td:first-child { border-left-color: #ff9999; }
         .closing td:first-child { border-left-color: #ff6699; }
+        
+        /* Section Headers */
+        .section-header {
+            background-color: #333 !important;
+            color: #ffffff !important;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        
+        /* Break Styling */
+        .break td {
+            background-color: #2a2a2a !important;
+            color: #ffffff !important;
+            font-weight: bold;
+            border-left-color: #ff9999 !important;
+        }
         
         /* Student Helpers Responsive Styles */
         @media (max-width: 768px) {
@@ -231,94 +248,179 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <!-- Opening Session -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>OPENING SESSION</b></td>
+                        </tr>
                         <tr class="opening-session">
-                            <td><b>Opening Session</b>
-                                <br>&nbsp;&nbsp;&nbsp;• Welcome Address - Prof. Yike Guo (Provost, HKUST)
-                                <br>&nbsp;&nbsp;&nbsp;• Government Representative Address - Prof. Dong Sun, JP (Secretary for Innovation, Technology and Industry, HKSAR)
-                                <br>&nbsp;&nbsp;&nbsp;• Thank You Remarks - Prof. Celine Song (Director, Media Intelligence Research Center)
-                                <br>&nbsp;&nbsp;&nbsp;• Opening Ceremony of the Media Intelligence Research Center
+                            <td><b>Coffee Reception</b></td>
+                            <td>8:40 AM - 9:00 AM</td>
+                        </tr>
+                        <tr class="opening-session">
+                            <td><b>Welcome Address</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Yike Guo - Provost, HKUST
                             </td>
-                            <td>9:00 AM - 9:20 AM</td>
+                            <td>9:00 AM - 9:05 AM</td>
+                        </tr>
+                        <tr class="opening-session">
+                            <td><b>Inauguration of the Media Intelligence Research Centre</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Yike Guo - Provost, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Huamin Qu - Dean, Academy of Interdisciplinary Studies, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Céline Yunya Song - Director, Media Intelligence Research Center, HKUST
+                            </td>
+                            <td>9:05 AM - 9:10 AM</td>
+                        </tr>
+                        
+                        <!-- Opening Perspectives -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>OPENING PERSPECTIVES</b></td>
                         </tr>
                         <tr class="keynote">
-                            <td><b>Opening Keynote</b>
-                                <br>&nbsp;&nbsp;&nbsp;• Prof. Yike Guo - <i>Hong Kong's Strategic Role in Global AI Governance</i>
-                                <br>&nbsp;&nbsp;&nbsp;• Ms. Merve Hickok - <i>Center for AI and Digital Policy Insights</i>
+                            <td><b>Opening Perspectives</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Yike Guo - Provost, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;• Ms. Merve Hickok - President and Research Director, Center for AI and Digital Policy
                             </td>
-                            <td>9:20 AM - 9:40 AM</td>
+                            <td>9:10 AM - 9:30 AM</td>
+                        </tr>
+                        
+                        <!-- Distinguished Keynote Address -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>DISTINGUISHED KEYNOTE ADDRESS – THOUGHT LEADERSHIP INSIGHTS</b></td>
                         </tr>
                         <tr class="vision-address">
-                            <td><b>Distinguished Vision Addresses</b>
-                                <br>&nbsp;&nbsp;&nbsp;• Dong Sun, JP - Secretary for Innovation, Technology and Industry
-                                <br>&nbsp;&nbsp;&nbsp;• Ms. Ada Chung Lai-ling, JP - Privacy Commissioner for Personal Data
-                                <br>&nbsp;&nbsp;&nbsp;• Mr. Tsang Chi Sham, Thomas - Deputy Director of Intellectual Property
+                            <td><b>Distinguished Keynote Address – Thought Leadership Insights</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Dong Sun, JP - Secretary for Innovation, Technology and Industry, HKSAR Government
+                                <br>&nbsp;&nbsp;&nbsp;• Ms. Ada Chung Lai-ling, SBS - Privacy Commissioner for Personal Data, HKSAR Government
+                                <br>&nbsp;&nbsp;&nbsp;• Mr. Thomas Tsang Chi-sham - Deputy Director of Intellectual Property, HKSAR Government
                             </td>
-                            <td>9:40 AM - 10:10 AM</td>
+                            <td>9:35 AM - 10:05 AM</td>
                         </tr>
-                        <tr class="break">
-                            <td><b>Tea Break</b></td>
-                            <td>10:10 AM - 10:30 AM</td>
+                        
+                        <!-- Innovation Forum 1 -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>INNOVATION FORUM 1 – POLICY AND REGULATORY FRAMEWORKS FOR GENERATIVE AI</b></td>
                         </tr>
                         <tr class="forum">
-                            <td><b>Innovation Forum 1 - Policy and Regulatory Frameworks for Generative AI</b>
-                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Celine Song
-                                <br>&nbsp;&nbsp;&nbsp;Discussants: Ms. Ada Chung Lai-ling, JP; Prof. Weiyu Zhang; Prof. Herman Cappelen; Ms. Merve Hickok
+                            <td><b>Innovation Forum 1 – Policy and Regulatory Frameworks for Generative AI</b>
+                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Céline Yunya Song - Director, Media Intelligence Research Center, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;Discussants: 
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Ms. Ada Chung Lai-ling, SBS - Privacy Commissioner for Personal Data, HKSAR Government
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Mr. Thomas Tsang Chi-sham - Deputy Director of Intellectual Property, HKSAR Government
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Weiyu Zhang - Provost's Chair Professor, National University of Singapore; Director, Civic Tech Lab
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Herman Cappelen - Chair Professor and Director, AI & Humanity Lab, HKU
                             </td>
-                            <td>10:30 AM - 11:10 AM</td>
+                            <td>10:10 AM - 10:55 AM</td>
+                        </tr>
+                        
+                        <!-- Distinguished Keynote Address -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>DISTINGUISHED KEYNOTE ADDRESS – THOUGHT LEADERSHIP INSIGHTS</b></td>
                         </tr>
                         <tr class="keynote">
-                            <td><b>Distinguished Keynote</b>
-                                <br>&nbsp;&nbsp;&nbsp;Mr. Henry Tang Ying-yen - Chairman of the Board, West Kowloon Cultural District Authority
+                            <td><b>Distinguished Keynote Address – Thought Leadership Insights</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Mr. Henry Tang Ying-yen, GBM, GBS, JP - Chairman of the Board, West Kowloon Cultural District Authority
                             </td>
-                            <td>11:10 AM - 11:20 AM</td>
+                            <td>11:00 AM - 11:10 AM</td>
+                        </tr>
+                        
+                        <!-- Innovation Forum 2 -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>INNOVATION FORUM 2 – CULTURALLY ADAPTIVE AI FOR DIVERSE SOCIETIES</b></td>
                         </tr>
                         <tr class="forum">
-                            <td><b>Innovation Forum 2 - Culturally Adaptive AI for Diverse Societies</b>
-                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Chan King Cheung
-                                <br>&nbsp;&nbsp;&nbsp;Discussants: Dr. Louis Ng; Prof. Marta Severo; Ms. Wai Pui Man, Echo; Prof. Sheng Zou
+                            <td><b>Innovation Forum 2 – Culturally Adaptive AI for Diverse Societies</b>
+                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Chan King Cheung - Raymond R. Wong Endowed Professor in Media Ethics, HKBU
+                                <br>&nbsp;&nbsp;&nbsp;Discussants:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Roland T. Chin - President Emeritus, HKBU
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Dr. Louis Ng - Director, Hong Kong Palace Museum
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Marta Severo - Director, DICEN Laboratory, Université Paris Nanterre
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Ms. Wai Pui Man, Echo - Controller (Production Services), RTHK
                             </td>
-                            <td>11:20 AM - 12:20 PM</td>
+                            <td>11:10 AM - 12:05 PM</td>
                         </tr>
+                        
+                        <!-- Lunch Break -->
                         <tr class="break">
-                            <td><b>Lunch Break</b></td>
-                            <td>12:20 PM - 2:00 PM</td>
+                            <td><b>🍽️ LUNCH BREAK</b></td>
+                            <td><b>12:20 PM - 1:40 PM</b></td>
+                        </tr>
+                        
+                        <!-- Distinguished Keynote Address -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>DISTINGUISHED KEYNOTE ADDRESS – THOUGHT LEADERSHIP INSIGHTS</b></td>
                         </tr>
                         <tr class="vision-address">
-                            <td><b>Distinguished Vision Address</b>
-                                <br>&nbsp;&nbsp;&nbsp;Mr. Paul Lam Ting-kwok, GBS, SC, JP - Secretary for Justice, HKSAR Government
+                            <td><b>Distinguished Keynote Address – Thought Leadership Insights</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Mr. Paul Lam Ting-kwok, GBS, SC, JP - Secretary for Justice, HKSAR Government
                             </td>
                             <td>2:00 PM - 2:10 PM</td>
                         </tr>
+                        
+                        <!-- Innovation Forum 3 -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>INNOVATION FORUM 3 – CREDIBILITY & ACCOUNTABILITY IN THE ERA OF GENERATIVE AI</b></td>
+                        </tr>
                         <tr class="forum">
-                            <td><b>Innovation Forum 3 - Rule of Law, Credibility & Accountability in the Era of Generative AI</b>
-                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Masaru Yarime
-                                <br>&nbsp;&nbsp;&nbsp;Presenters: Prof. Jyh-An Lee; Prof. Libo Wu; Mr. Jeffrey Lai; Mr. Charles Cheung
+                            <td><b>Innovation Forum 3 – Credibility & Accountability in the Era of Generative AI</b>
+                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Masaru Yarime - Associate Professor, Division of Public Policy, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;Discussants:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Jyh-An Lee - Outstanding Fellow, Faculty of Law, CUHK; Founding Executive Director, Centre for Legal Innovation and Digital Society, CUHK
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Mr. Jeff Lai - Interim Chief Information Officer, Information Technology, Securities and Futures Commission
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Dr. Charles Cheung - Senior Data Scientist and Deputy Director, NVIDIA AI Technology Center Hong Kong
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Simon Goldstein - Associate Professor, Principal Investigator, AI & Humanity Lab, HKU
                             </td>
-                            <td>2:10 PM - 3:10 PM</td>
+                            <td>2:10 PM - 3:00 PM</td>
                         </tr>
+                        
+                        <!-- Tea Break -->
                         <tr class="break">
-                            <td><b>Tea Break</b></td>
-                            <td>3:10 PM - 3:30 PM</td>
+                            <td><b>☕ TEA BREAK</b></td>
+                            <td><b>3:00 PM - 3:20 PM</b></td>
+                        </tr>
+                        
+                        <!-- Fireside Dialogue 1 -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>FIRESIDE DIALOGUE 1 – DIGITAL POLICY AND AI: GOVERNANCE, INNOVATION, AND INDUSTRY PRACTICES</b></td>
                         </tr>
                         <tr class="dialogue">
-                            <td><b>Fireside Dialogue 1 - Digital Policy and AI: Governance, Innovation, and Industry Practices</b>
-                                <br>&nbsp;&nbsp;&nbsp;Chair: Prof. Kira Matus
-                                <br>&nbsp;&nbsp;&nbsp;Discussants: Prof. Yanto Chandra; Mr. Tony Wong; Mr. Alan Lam; Mr. Herbert Chia
+                            <td><b>Fireside Dialogue 1 – Digital Policy and AI: Governance, Innovation, and Industry Practices</b>
+                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Kira Matus - Associate Dean, Academy of Interdisciplinary Studies, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;Discussants:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Mr. Tony Wong, JP - Commissioner for Digital Policy, HKSAR Government
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Yanto Chandra - Professor, Department of Public and International Affairs, CityU
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Herbert Chia, JP - Co-Chairman, International Data Industry Alliance; Senior Advisor, Alibaba Cloud Intelligence (North APAC & SEA Region)
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Mr. Hua Xu - Head of Software, Hong Kong Generative AI Center
                             </td>
-                            <td>3:30 PM - 4:10 PM</td>
+                            <td>3:20 PM - 4:10 PM</td>
+                        </tr>
+                        
+                        <!-- Fireside Dialogue 2 -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>FIRESIDE DIALOGUE 2 – AI, CULTURE, AND SOCIETY: BUILDING TRUST AND SHARED VALUES</b></td>
                         </tr>
                         <tr class="dialogue">
-                            <td><b>Fireside Dialogue 2 - AI, Culture, and Society: Building Trust and Shared Values</b>
-                                <br>&nbsp;&nbsp;&nbsp;Chair: Prof. Anyi Rao
-                                <br>&nbsp;&nbsp;&nbsp;Discussants: Prof. Eleni Mouratidou; Prof. Simon Goldstein; Zhao Alexandre Huang; Lop Poon Yau
+                            <td><b>Fireside Dialogue 2 – AI, Culture, and Society: Building Trust and Shared Values</b>
+                                <br>&nbsp;&nbsp;&nbsp;Moderator: Prof. Anyi Rao - Associate Director, Media Intelligence Research Center, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;Discussants:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Eleni Mouratidou - Vice President, Université Paris Nanterre
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Wei Xue - Assistant Professor, AIS & Founding Member of HKGAI, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. Zhao Alexandre Huang - Associate Professor of Communication, Université Gustave Eiffel
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Prof. David Andrew Haslett - Research Assistant Professor, Division of Social Science, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Ms. Jenny Li - PhD Researcher, Academy of Interdisciplinary Studies, HKUST
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Mr. Kit Wong - Executive Editor, YAZHOU ZHOUKAN
                             </td>
-                            <td>4:10 PM - 4:50 PM</td>
+                            <td>4:15 PM - 5:15 PM</td>
+                        </tr>
+                        
+                        <!-- Closing Remarks -->
+                        <tr class="section-header">
+                            <td colspan="2"><b>CLOSING REMARKS AND EVENT CONCLUSION</b></td>
                         </tr>
                         <tr class="closing">
-                            <td><b>Closing Remarks</b>
-                                <br>&nbsp;&nbsp;&nbsp;Prof. Celine Song - Director, Media Intelligence Research Center
+                            <td><b>Closing Remarks and Event Conclusion</b>
+                                <br>&nbsp;&nbsp;&nbsp;• Prof. Céline Yunya Song - Director, Media Intelligence Research Center, HKUST
                             </td>
-                            <td>4:50 PM - 5:00 PM</td>
+                            <td>5:15 PM - 5:20 PM</td>
                         </tr>
                     </tbody>
                     </table>
