@@ -26,6 +26,83 @@
             font-size: 0.85em;
         }
         
+        /* Signup Button Styling */
+        .signup-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .signup-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white !important;
+            text-decoration: none !important;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .signup-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(99, 102, 241, 0.4);
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            color: white !important;
+            text-decoration: none !important;
+        }
+        
+        .signup-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .signup-btn:hover:before {
+            left: 100%;
+        }
+        
+        .signup-btn i {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+        
+        .signup-text {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .signup-btn {
+                padding: 12px 30px;
+                font-size: 1.1em;
+            }
+            
+            .signup-text {
+                font-size: 1em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .signup-btn {
+                padding: 10px 25px;
+                font-size: 1em;
+            }
+        }
+        
         /* Mobile responsive styles */
         @media (max-width: 768px) {
             .intro img {
@@ -210,7 +287,14 @@
                     <p style="margin-top: 0; margin-bottom: 20px;">
                     Organized by: <span style="color: rgb(102, 153, 255);"><b><a href="https://hkust-mirc.github.io/">Media Intelligence Research Center, Division of Emerging Interdisciplinary Areas, Academy of Interdisciplinary Studies, HKUST</a></b></span>
                     </p>
+                    
+                    <div class="signup-container">
+                        <a href="https://forms.gle/rTDnVRhEs9E9V55P9" target="_blank" class="signup-btn">
+                            Register Now!
+                        </a>
+                    </div>
             </div>
+            
             
             <h2 class="text-center">About</h2>
             <p style="text-align: justify">The High-Level Forum on Generative AI Governance and Cultural Co-Creation convenes global thought leaders, policymakers, researchers, and industry innovators to explore how artificial intelligence can be governed responsibly while advancing cultural innovation and shared human values.
